@@ -166,12 +166,13 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           IconButton(
                             icon: const Icon(Icons.edit),
-                            // onPressed: () => _showForm(_journals[index]['id']), // open form with item id
-                            onPressed: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const SecondRoute()),
-                            ),
+                            onPressed: () => _showForm(_journals[index]
+                                ['id']), // open form with item id
+                            // onPressed: () => Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //       builder: (context) => const SecondRoute()),
+                            // ),
                           ),
                           IconButton(
                             icon: const Icon(Icons.delete),
